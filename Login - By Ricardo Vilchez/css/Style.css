@@ -1,0 +1,217 @@
+/* Ricardo Vilchez - Trayecto: "2-3" - Seccion "11" */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(35, 45, 75);
+    height: 100vh;
+}
+
+.BlizzardIcon{
+    display: flex;
+    margin: 0 auto;
+    width: 225px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 48px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+}
+
+.form-container {
+    background-color: white;
+    width: 80%;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.form-container .login-container {
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.form-container .login-container > h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.form-container .login-container > p,
+.form-container .login-container span {
+    color: #555;
+    text-align: center;
+}
+
+.form-container .login-container label {
+    display: block;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.form-container .login-container input.input {
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    border: solid 1px #ccc;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.form-container .login-container input.input:focus {
+    outline: solid 1px rgb(0, 153, 255);
+}
+
+.form-container .login-container .providers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form-container .login-container button.mda {
+    position: relative;
+    border: none;
+    padding: 10px 0;
+    width: 60%;
+    font-size: 15px;
+    font-weight: 750;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container .login-container button.btn,
+.form-container .login-container input.btn {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form-container .login-container input.btn.btn-login {
+    background-color: rgb(1, 179, 55);
+    color: white;
+}
+
+.form-container .login-container button.mda.google-provider {
+    background-color: white;
+    color: black;
+    border: solid 1px #ccc;
+}
+
+.form-container .login-container button.mda.facebook-provider {
+    background-color: rgb(37, 92, 194);
+    color: white;
+    border: 0;
+}
+
+.form-container .login-container button.mda.twitter-provider {
+    background-color: rgba(1, 181, 194, 0.822);
+    color: white;
+    border: 0;
+}
+
+.form-container .login-container button.mda.google-provider:hover {
+    background-color: rgb(212, 212, 212);
+    color: black;
+}
+
+.form-container .login-container button.mda.facebook-provider:hover {
+    background-color: rgb(6, 53, 139);
+    color: white;
+}
+
+.form-container .login-container button.mda.twitter-provider:hover {
+    background-color: rgb(6, 108, 139);
+    color: white;
+}
+
+.form-container .login-container .options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container .welcome-screen-container {
+    background-image: url(WoW.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+}
+
+.mdaIcon {
+    position: absolute;
+    margin-top: -2px;
+    width: 20px;
+    height: 20px;
+}
+
+.mdaIcon.google {
+    left: 30%;
+}
+
+.mdaIcon.facebook {
+    left: 25%;
+}
+
+.mdaIcon.twitter {
+    left: 29%;
+}
+
+@media screen and (max-width: 1350px) {
+.form-container {
+    width: 95%;
+}
+.form-container .login-container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.form-container .welcome-screen-container {
+    width: 40%;
+}
+}
+
+@media screen and (max-width: 900px) {
+.form-container .login-container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.form-container .welcome-screen-container {
+    width: 0%;
+}
+}
+
+/* Fin */
